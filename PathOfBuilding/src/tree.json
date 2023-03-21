@@ -1,0 +1,52 @@
+{
+	"hashes": [
+		476, 487, 903, 1734, 2092, 2225, 2715, 3042, 3187, 3469, 4656, 4944, 5152, 5197, 5237, 6043, 6289, 6363, 6580,
+		7085, 7162, 8879, 9206, 9262, 9695, 10204, 11678, 13714, 13807, 13922, 14056, 14384, 14419, 14930, 15085, 15842,
+		15868, 16093, 16380, 17988, 18009, 18302, 18703, 19069, 19711, 19858, 20010, 20551, 20730, 22627, 22703, 23090,
+		23471, 24383, 24641, 25011, 25456, 25781, 25933, 26528, 27119, 28475, 29797, 30439, 30679, 30691, 30733, 30894,
+		31080, 31513, 32115, 32117, 33089, 33657, 34009, 34400, 34678, 35221, 36047, 36221, 36704, 36874, 37504, 38320,
+		40135, 40907, 41866, 42009, 43374, 44297, 45491, 46578, 48287, 48438, 48807, 49153, 49178, 49412, 49547, 50340,
+		50904, 51998, 52288, 53002, 53816, 54142, 54340, 55485, 56023, 56595, 58271, 59335, 59494, 59866, 60031, 60942,
+		61198, 63048, 63620, 64587, 64709, 65093, 65112, 65210
+	],
+	"hashes_ex": [],
+	"mastery_effects": [
+		"2566053139",
+		"3119196124",
+		"2463152",
+		"2485512135",
+		"3928020036",
+		"3122269154",
+		"1272873849",
+		"901599482",
+		"2899368663",
+		"3352005013",
+		"4219298227"
+	],
+	"items": [
+		{
+			"verified": false,
+			"w": 1,
+			"h": 1,
+			"icon": "https://web.poecdn.com/gen/image/WzI1LDE0LHsiZiI6IjJESXRlbXMvSmV3ZWxzL2Jhc2ljaW50IiwidyI6MSwiaCI6MSwic2NhbGUiOjF9XQ/510013aec2/basicint.png",
+			"league": "Hardcore Sanctum",
+			"id": "fb97e5668206a55d2f57edf3907f4f5808c505bf74450c8939112bee54fe0866",
+			"name": "Sol Joy",
+			"typeLine": "Cobalt Jewel",
+			"baseType": "Cobalt Jewel",
+			"identified": true,
+			"ilvl": 80,
+			"explicitMods": [
+				"+10 to Strength and Intelligence",
+				"7% increased maximum Life",
+				"12% increased Projectile Damage"
+			],
+			"descrText": "Place into an allocated Jewel Socket on the Passive Skill Tree. Right click to remove from the Socket.",
+			"frameType": 2,
+			"x": 7,
+			"y": 0,
+			"inventoryId": "PassiveJewels"
+		}
+	],
+	"jewel_data": { "7": { "type": "JewelInt" } }
+}

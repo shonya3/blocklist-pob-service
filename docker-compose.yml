@@ -1,0 +1,9 @@
+services:
+    dev:
+        container_name: dev
+        build:
+            context: .
+            dockerfile: Dockerfile
+        volumes:
+            - ./:/myapp
+        command: bash -c "cargo run"
