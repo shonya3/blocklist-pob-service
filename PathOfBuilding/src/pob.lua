@@ -22,8 +22,6 @@ end
 
 -- print(build.mainSocketGroup)
 
-
-
 -- print(build.displayStats)
 -- for index,statObject in pairs(build.displayStats) do
 --     for stat,label in pairs(statObject) do
@@ -39,7 +37,7 @@ end
 
 -- local result = buildTable("output", build.calcsTab.mainOutput)
 
-
+ inspect = require 'inspect'
 
 print("--headless pob starts--")
 
@@ -299,6 +297,50 @@ build.buildFromXML = loadBuildFromXML
 build.toXML = function(self)
     return self:SaveDB("code")
 end
+
+
+
+function printspect(...)
+    print(inspect(...))
+end
+
+function readSkillSelection()
+    local pickedGroupIndex = build.mainSocketGroup
+    local socketGroup = build.skillsTab.socketGroupList[pickedGroupIndex]
+    runCallback("OnFrame")
+    -- local pickedGroupName = socketGroup and socketGroup.displayLabel
+    -- local pickedActiveSkillIndex = socketGroup and socketGroup.mainActiveSkill
+
+    -- printspect({
+    --    socketGroup = socketGroup,
+    --     pickedGroupIndex = pickedGroupIndex
+    -- })
+    -- local displaySkill = socketGroup and socketGroup.displaySkillList[pickedActiveSkillIndex]
+    -- local activeEffect = displaySkill and displaySkill.activeEffect
+    -- local pickedActiveSkillName = activeEffect and activeEffect.grantedEffect.name
+    -- local pickedPartIndex = activeEffect and activeEffect.grantedEffect.parts and activeEffect.srcInstance.skillPart
+    -- local pickedPartName = activeEffect and activeEffect.grantedEffect.parts and
+    -- activeEffect.grantedEffect.parts[pickedPartIndex].name
+
+    return socketGroup
+    -- return {
+    --     group = pickedGroupName,
+    --     name = pickedActiveSkillName,
+    --     part = pickedPartName,
+    -- }
+end
+
+
+
+
+
+function writeTable(path, table)
+                local file = io.open(path, "w")
+                file:write(inspect(table))
+                file:close()
+            end
+
+-- printspect(delfunc(testtable))
 
 
 
